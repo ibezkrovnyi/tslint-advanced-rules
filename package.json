@@ -1,0 +1,43 @@
+{
+  "name": "tslint-advanced-rules",
+  "version": "0.0.1",
+  "description": "",
+  "main": "tslint.json",
+  "scripts": {
+    "test": "tslint --test tests/rules/*/*",
+    "precompile": "rimraf '{src,rules}/*.js'",
+    "compile": "tsc -p .",
+    "lint": "tslint -p .",
+    "lint:fix": "tslint --fix -p .",
+    "test2": "tslint --config tslint.json --project ./tests/tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibezkrovnyi/tslint-advanced-rules.git"
+  },
+  "keywords": [
+    "eslint",
+    "tslint",
+    "custom-rules",
+    "rules",
+    "stylish",
+    "lint",
+    "linting",
+    "linter",
+    "tslint-plugin"
+  ],
+  "author": "",
+  "dependencies": {
+    "tsutils": "2.21.0"
+  },
+  "devDependencies": {
+    "rimraf": "2.6.2",
+    "tslint": "5.8.0",
+    "typescript": "2.7.2"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibezkrovnyi/tslint-advanced-rules/issues"
+  },
+  "homepage": "https://github.com/ibezkrovnyi/tslint-advanced-rules#readme"
+}

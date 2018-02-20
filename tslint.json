@@ -1,0 +1,11 @@
+{
+  "lintOptions": {
+    "typeCheck": true
+  },
+  "rulesDirectory": [
+    "./rules"
+  ],
+  "rules": {
+    "no-inferrable-return-types": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "inlineSourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "stripInternal": true,
+    "lib": ["es6"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./rules/**/*.ts"
+  ]
+}
