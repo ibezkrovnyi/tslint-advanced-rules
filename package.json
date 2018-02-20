@@ -2,7 +2,7 @@
   "name": "@ibezkrovnyi/tslint-rules",
   "version": "0.0.1",
   "description": "",
-  "main": "tslint.json",
+  "main": "rules/index.js",
   "scripts": {
     "test": "tslint --test tests/rules/*/*",
     "precompile": "rimraf '{src,rules}/*.js'",
