@@ -1,0 +1,8 @@
+/.vscode
+/.idea
+/node_modules
+.gitignore
+tsconfig.json
+tslint.json
+*.ts
+/tests/
