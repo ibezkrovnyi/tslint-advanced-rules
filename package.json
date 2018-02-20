@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibezkrovnyi/tslint-advanced-rules.git"
+    "url": "git+https://github.com/ibezkrovnyi/tslint-rules.git"
   },
   "keywords": [
     "eslint",
@@ -36,7 +36,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ibezkrovnyi/tslint-advanced-rules/issues"
+    "url": "https://github.com/ibezkrovnyi/tslint-rules/issues"
   },
-  "homepage": "https://github.com/ibezkrovnyi/tslint-advanced-rules#readme"
+  "homepage": "https://github.com/ibezkrovnyi/tslint-rules#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
