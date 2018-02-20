@@ -1,5 +1,5 @@
 {
-  "name": "tslint-advanced-rules",
+  "name": "@ibezkrovnyi/tslint-rules",
   "version": "0.0.1",
   "description": "",
   "main": "tslint.json",
@@ -28,7 +28,6 @@
   ],
   "author": "",
   "dependencies": {
-    "tsutils": "2.21.0"
   },
   "devDependencies": {
     "rimraf": "2.6.2",

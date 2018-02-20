@@ -1,25 +1,9 @@
 import * as ts from 'typescript';
 import * as Lint from 'tslint';
-import {
-    // isTypeParameter,
-    // getVariableDeclarationKind,
-    // VariableDeclarationKind,
-    // getPropertyName,
-    // isTypeFlagSet,
-    // isExpressionValueUsed,
-    // isUnionType,
-    // isThisParameter,
-    // isTypePredicateNode,
-    // isValidNumericLiteral,
-    // isIntersectionType,
-} from 'tsutils';
-
-// type FunctionExpressionLike = ts.SyntaxKind.ArrowFunction | ts.SyntaxKind.FunctionExpression;
 
 const FAIL_MESSAGE = `type annotation is redundant`;
 
 interface IOptions {
-
 }
 
 export class Rule extends Lint.Rules.TypedRule {
