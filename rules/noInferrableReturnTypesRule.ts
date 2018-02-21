@@ -50,18 +50,9 @@ function walk(ctx: Lint.WalkContext<IOptions>, checker: ts.TypeChecker) {
 
         const { inferredReturnType, explicitReturnType } = getReturnTypes(node);
 
-        // if ((node as any).name.text === 'funcReturnType1primitiveEqualsInferredLoosely') {
-        //     console.log('x');
-        // }
-        const flags = ts.getCombinedModifierFlags(node);
-        const isAbstract = flags & ts.ModifierFlags.Abstract;
-        const isGenerator = !!node.asteriskToken;
-
-        if (!isGenerator && !isAbstract) {
-            if (explicitReturnType && inferredReturnType) {
-                if (typesAreEqual(explicitReturnType, inferredReturnType)) {
-                    fail(node.type);
-                }
+        if (explicitReturnType && inferredReturnType) {
+            if (typesAreEqual(explicitReturnType, inferredReturnType)) {
+                fail(node.type);
             }
         }
     }

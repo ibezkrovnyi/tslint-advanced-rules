@@ -1,6 +1,6 @@
 {
   "name": "@ibezkrovnyi/tslint-rules",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "rules/index.js",
   "scripts": {
