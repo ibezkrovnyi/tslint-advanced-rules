@@ -76,10 +76,21 @@ function walk(ctx: Lint.WalkContext<IOptions>, checker: ts.TypeChecker) {
         if (node && node.type) {
             const signature = checker.getSignatureFromDeclaration(node)!;
             explicitReturnType = checker.getReturnTypeOfSignature(signature);
-            const tmp = (signature as any).resolvedReturnType;
+            
+            // signature.resolvedReturnType trick, required to get infered return type
+            const resolvedReturnTypeTrick = (signature as any).resolvedReturnType;
             (signature as any).resolvedReturnType = undefined;
+            
+            // signature.declaration.type trick, required to get infered return type
+            const typeTrick = signature.declaration.type;
+            signature.declaration.type = undefined;
+
+            // get infered return type
             inferredReturnType = checker.getReturnTypeOfSignature(signature);
-            (signature as any).resolvedReturnType = tmp;
+
+            // rollback tricks
+            (signature as any).resolvedReturnType = resolvedReturnTypeTrick;
+            signature.declaration.type = typeTrick;
         }
 
         return {
