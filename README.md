@@ -1,5 +1,7 @@
 # tslint-rules
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ibezkrovnyi/tslint-rules.svg)](https://greenkeeper.io/)
+
 currently it contains only one rule:
 
 ```json
