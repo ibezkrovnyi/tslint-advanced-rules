@@ -26,10 +26,7 @@ npm i -D @ibezkrovnyi/tslint-rules
 and add to tslint.json
 ```json
 "extends": [
-    "tslint:recommended",
-    "tslint-config-airbnb",
-    "tslint-consistent-codestyle",
-    "@ibezkrovnyi/tslint-rules"
+  "@ibezkrovnyi/tslint-rules"
 ],
 "rules": {
   "no-inferrable-return-types": true
